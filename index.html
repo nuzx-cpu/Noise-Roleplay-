@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Noise Roleplay - FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .light-theme {
+      background-color: #f5f5f5;
+      color: #121212;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .logo {
+      height: 40px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .light-theme nav a {
+      color: #000;
+    }
+
+    .theme-btn {
+      background: none;
+      border: none;
+      color: inherit;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    details {
+      background-color: #1e1e1e;
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .light-theme details {
+      background-color: #ddd;
+    }
+
+    iframe {
+      max-width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Noise RP" class="logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contato</a>
+      <a href="#play">Jogar Agora</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" id="themeToggle">🌙</button>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>FAQ — Noise Roleplay e Tutorial</h1>
+      <p>Tudo que você precisa para jogar o servidor com mapa do GTA 5 e sistemas personalizados.</p>
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/sckpoHfEH3g" title="Tutorial Noise RP" allowfullscreen></iframe>
+    </section>
+
+    <section id="faq">
+      <h2>Perguntas Frequentes</h2>
+
+      <details>
+        <summary>Como instalar o Noise RP?</summary>
+        <p>Assista ao vídeo acima e siga os passos para instalar o servidor com segurança.</p>
+      </details>
+
+      <details>
+        <summary>Como entrar no Discord oficial?</summary>
+        <p>Use <a href="https://discord.gg/JvrsdGTR" target="_blank">este link</a> para acessar nosso servidor e tirar dúvidas com a staff.</p>
+      </details>
+
+      <details>
+        <summary>Erro comum: SA-MP não abre</summary>
+        <p>Verifique se está usando o GTA San Andreas original e reinstale o SA-MP.</p>
+      </details>
+    </section>
+  </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light-theme");
+      const btn = document.getElementById("themeToggle");
+      btn.textContent = document.body.classList.contains("light-theme") ? "☀️" : "🌙";
+    }
+  </script>
+</body>
+</html>
