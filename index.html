@@ -1,126 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Noise Roleplay - FAQ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Craft - Série Minecraft</title>
   <style>
     body {
-      font-family: 'DM Sans', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: #fff;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .light-theme {
-      background-color: #f5f5f5;
-      color: #121212;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e002e, #32004d);
+      color: #ffffff;
+      text-align: center;
     }
 
     header {
-      background: #1f1f1f;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      background-color: #4b0082;
+      padding: 20px;
+      box-shadow: 0 2px 10px #00000055;
     }
 
-    header .logo {
-      height: 40px;
+    .logo {
+      height: 120px;
+    }
+
+    nav {
+      margin-top: 10px;
     }
 
     nav a {
-      color: #fff;
-      margin: 0 10px;
+      color: #ffffff;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
     }
 
-    .light-theme nav a {
-      color: #000;
+    nav a:hover {
+      color: #da70d6;
     }
 
-    .theme-btn {
-      background: none;
-      border: none;
-      color: inherit;
-      font-size: 20px;
-      cursor: pointer;
+    .section {
+      padding: 40px 20px;
     }
 
-    section {
+    .section h2 {
+      color: #da70d6;
+      margin-bottom: 20px;
+    }
+
+    .characters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .character {
+      background-color: #2a0045;
+      border-radius: 15px;
       padding: 20px;
+      width: 200px;
+      box-shadow: 0 0 10px #00000066;
     }
 
-    details {
-      background-color: #1e1e1e;
-      border-radius: 6px;
-      padding: 10px;
-      margin-bottom: 10px;
+    .character img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
-    summary {
-      cursor: pointer;
+    .character h3 {
+      margin: 0;
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #1a0033;
+      font-size: 14px;
+    }
+
+    .discord-link {
+      color: #8f5fff;
       font-weight: bold;
+      text-decoration: none;
     }
 
-    .light-theme details {
-      background-color: #ddd;
+    .discord-link:hover {
+      text-decoration: underline;
     }
 
-    iframe {
-      max-width: 100%;
-      border: none;
-    }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="Logo Noise RP" class="logo">
+    <img src="https://cdn.discordapp.com/attachments/1377686300836102366/1377726338135228436/77052e1c9b076c7a0d0375a583e2d350.png?ex=683a0323&is=6838b1a3&hm=5e90869fd174e55c307546f701a3624a6049fe7ce8328b02f10f31cf9b2ccfa2&" alt="Logo Aurora Craft" class="logo">
     <nav>
-      <a href="#home">Home</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contato</a>
-      <a href="#play">Jogar Agora</a>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Personagens</a>
+      <a href="#">Episódios</a>
     </nav>
-    <button class="theme-btn" onclick="toggleTheme()" id="themeToggle">🌙</button>
   </header>
 
-  <main>
-    <section id="home">
-      <h1>FAQ — Noise Roleplay e Tutorial</h1>
-      <p>Tudo que você precisa para jogar o servidor com mapa do GTA 5 e sistemas personalizados.</p>
-      <iframe width="320" height="180" src="https://www.youtube.com/embed/sckpoHfEH3g" title="Tutorial Noise RP" allowfullscreen></iframe>
-    </section>
+  <section class="section">
+    <h2>Sobre a Série</h2>
+    <p>Aurora Craft é uma série Minecraft focada em aventuras, construção, batalhas e diversão entre amigos. Uma jornada única com personagens incríveis e uma comunidade ativa!</p>
+    <p>Participe da comunidade no nosso <a href="https://discord.gg/auroracraft" class="discord-link" target="_blank">Discord Oficial</a>.</p>
+  </section>
 
-    <section id="faq">
-      <h2>Perguntas Frequentes</h2>
+  <section class="section">
+    <h2>Personagens da Série</h2>
+    <div class="characters">
+      <div class="character">
+        <img src="https://cdn.discordapp.com/attachments/1377686300836102366/1377779700713390152/iconNeoB.png?ex=683a34d6&is=6838e356&hm=d00df1f33c7edb3f6941905058cc468b1a7250fde612c25c030227a739ee15e4&" alt="NeoBYT">
+        <h3>NeoBYT</h3>
+      </div>
+      <div class="character">
+        <img src="https://cdn.discordapp.com/attachments/1377686300836102366/1377779956540510208/1747779845539.jpg?ex=683a3513&is=6838e393&hm=be4e54d5118537b8661fa4c50bb06711eda72fd5c7236e0d5591a556d0135ebc&" alt="Sam">
+        <h3>Sam</h3>
+      </div>
+    </div>
+  </section>
 
-      <details>
-        <summary>Como instalar o Noise RP?</summary>
-        <p>Assista ao vídeo acima e siga os passos para instalar o servidor com segurança.</p>
-      </details>
+  <footer>
+    © 2025 Aurora Craft. Todos os direitos reservados.
+  </footer>
 
-      <details>
-        <summary>Como entrar no Discord oficial?</summary>
-        <p>Use <a href="https://discord.gg/JvrsdGTR" target="_blank">este link</a> para acessar nosso servidor e tirar dúvidas com a staff.</p>
-      </details>
-
-      <details>
-        <summary>Erro comum: SA-MP não abre</summary>
-        <p>Verifique se está usando o GTA San Andreas original e reinstale o SA-MP.</p>
-      </details>
-    </section>
-  </main>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("light-theme");
-      const btn = document.getElementById("themeToggle");
-      btn.textContent = document.body.classList.contains("light-theme") ? "☀️" : "🌙";
-    }
-  </script>
 </body>
 </html>
