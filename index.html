@@ -3,125 +3,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aurora Creft</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #2e003e;
-      color: white;
+      font-family: Arial, sans-serif;
+      background-color: #1a001f;
+      color: #fff;
     }
     header {
       background-color: #4b0082;
-      padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
     }
     header img {
-      height: 80px;
+      height: 60px;
     }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
+    header a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      margin-left: 20px;
     }
-    .section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
+    .sobre {
+      padding: 30px;
+      text-align: center;
     }
     .personagens {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
+      padding: 30px;
     }
     .card {
-      background-color: #3b0066;
-      border-radius: 10px;
-      padding: 15px;
+      background: #2a0033;
+      border-radius: 12px;
       width: 200px;
       text-align: center;
-      box-shadow: 0 0 15px #6400a8;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
     }
     .card img {
       width: 100%;
       border-radius: 10px;
     }
+    .formulario {
+      padding: 30px;
+      text-align: center;
+    }
     .formulario input, .formulario textarea {
-      width: 100%;
+      width: 300px;
+      margin: 10px;
       padding: 10px;
-      margin-top: 10px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
     }
     .formulario button {
-      background-color: #8a2be2;
+      background-color: #6a0dad;
       color: white;
       border: none;
       padding: 10px 20px;
-      margin-top: 15px;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
-      font-weight: bold;
     }
     footer {
+      background-color: #2a0033;
       text-align: center;
       padding: 20px;
-      background-color: #4b0082;
-      color: white;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977739977560206/Logotipo_para_jogador_lobo_moderno_azul_20250529_162150_0000.png" alt="Logo Aurora Creft">
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#personagens">Personagens</a>
-      <a href="#suporte">Suporte</a>
+    <div>
       <a href="https://youtube.com/@aurora_creft" target="_blank">Canal Oficial</a>
       <a href="https://discord.gg/uZ8Jft6B" target="_blank">Discord</a>
-    </nav>
-  </header>  <section class="section" id="sobre">
-    <h2>Sobre a Série</h2>
-    <p>Aurora Creft é uma série Minecraft com personagens únicos, histórias envolventes e uma comunidade ativa! Acompanhe a jornada de Sam, NeoB e YzecaYT enfrentando desafios e aventuras incríveis no universo Aurora.</p>
-  </section>  <section class="section" id="personagens">
-    <h2>Personagens</h2>
-    <div class="personagens">
-      <div class="card">
-        <a href="https://www.youtube.com/@sam-f4h1m" target="_blank">
-          <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977387525869638/1747779845539-1.jpg" alt="Sam">
-          <h3>Sam</h3>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://www.youtube.com/@NeoBYT2" target="_blank">
-          <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977401601949787/iconNeoB-1-1.png" alt="NeoB">
-          <h3>NeoB</h3>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://youtube.com/@yzecaYT" target="_blank">
-          <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977415283904603/foto_de_perfil_yZecaYT_sujhuthumbmaker-1.png" alt="YzecaYT">
-          <h3>YzecaYT</h3>
-        </a>
-      </div>
     </div>
-  </section>  <section class="section" id="suporte">
-    <h2>Suporte Online</h2>
-    <form class="formulario">
-      <input type="email" placeholder="Seu e-mail" required>
-      <input type="text" placeholder="Seu nick" required>
-      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+  </header>  <section class="sobre">
+    <h1>Sobre a Série Aurora Creft</h1>
+    <p>Uma série original com personagens únicos, aventuras no estilo Minecraft e muito mais!</p>
+  </section>  <section class="personagens">
+    <div class="card">
+      <a href="https://www.youtube.com/@sam-f4h1m" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977387525869638/1747779845539-1.jpg" alt="Sam">
+        <h3>Sam</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.youtube.com/@NeoBYT2" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977401601949787/iconNeoB-1-1.png" alt="NeoB">
+        <h3>NeoB</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://youtube.com/@yzecayt" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977415283904603/foto_de_perfil_yZecaYT_sujhuthumbmaker-1.png" alt="YzecaYT">
+        <h3>YzecaYT</h3>
+      </a>
+    </div>
+  </section>  <section class="formulario">
+    <h2>Suporte</h2>
+    <form>
+      <input type="email" placeholder="Seu e-mail" required><br>
+      <input type="text" placeholder="Seu nick" required><br>
+      <textarea rows="4" placeholder="Mensagem"></textarea><br>
       <button type="submit">Enviar</button>
     </form>
   </section>  <footer>
-    &copy; 2025 Aurora Creft. Todos os direitos reservados.
+    <p>&copy; 2025 Aurora Creft. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
