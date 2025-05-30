@@ -1,157 +1,127 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aurora Creft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #1e0033;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #2e003e;
       color: white;
-      text-align: center;
     }
     header {
       background-color: #4b0082;
       padding: 20px;
+      text-align: center;
     }
     header img {
-      max-height: 100px;
+      height: 80px;
     }
-    h1 {
+    nav {
       margin-top: 10px;
-      font-size: 2.5em;
     }
-    .buttons {
-      margin: 20px;
-    }
-    .buttons a {
-      text-decoration: none;
+    nav a {
       color: white;
-      background-color: #6a0dad;
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin: 10px;
-      display: inline-block;
-      transition: 0.3s;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .buttons a:hover {
-      background-color: #a020f0;
+    .section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .characters {
+    .personagens {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      margin-top: 40px;
+      gap: 20px;
+      justify-content: center;
     }
-    .character {
-      background-color: #32004d;
-      border-radius: 15px;
-      margin: 15px;
+    .card {
+      background-color: #3b0066;
+      border-radius: 10px;
       padding: 15px;
       width: 200px;
-      transition: transform 0.3s;
-      text-decoration: none;
-      color: white;
+      text-align: center;
+      box-shadow: 0 0 15px #6400a8;
     }
-    .character:hover {
-      transform: scale(1.05);
-    }
-    .character img {
+    .card img {
       width: 100%;
       border-radius: 10px;
     }
-    .character-name {
-      margin-top: 10px;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #2a0055;
-      border-radius: 15px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    input, textarea {
+    .formulario input, .formulario textarea {
+      width: 100%;
       padding: 10px;
+      margin-top: 10px;
       border: none;
-      border-radius: 10px;
-      font-size: 1em;
+      border-radius: 5px;
     }
-    input[type="submit"] {
-      background-color: #6a0dad;
+    .formulario button {
+      background-color: #8a2be2;
       color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s;
-    }
-    input[type="submit"]:hover {
-      background-color: #a020f0;
+      font-weight: bold;
     }
     footer {
-      margin-top: 40px;
+      text-align: center;
       padding: 20px;
       background-color: #4b0082;
+      color: white;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://cdn.discordapp.com/attachments/1377686300836102366/1377726338135228436/77052e1c9b076c7a0d0375a583e2d350.png" alt="Aurora Creft Logo">
-    <h1>Aurora Creft</h1>
-  </header>
-
-  <div class="buttons">
-    <a href="https://youtube.com/@aurora_creft?si=iONjl8X9VqBDxFTS" target="_blank">Canal Oficial</a>
-    <a href="https://discord.gg/uZ8Jft6B" target="_blank">Discord Oficial</a>
-    <a href="#suporte">Suporte</a>
-  </div>
-
-  <div class="characters">
-    <a class="character" href="https://youtube.com/@sam-f4h1m?si=gYI8UbnJQIf_b-Xn" target="_blank">
-      <img src="https://cdn.discordapp.com/attachments/1377686300836102366/1377779956540510208/1747779845539.jpg" alt="Sam">
-      <div class="character-name">Sam</div>
-    </a>
-    <a class="character" href="https://www.youtube.com/@NeoBYT2" target="_blank">
-      <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377804216051171410/iconNeoB-1.png" alt="NeoB">
-      <div class="character-name">NeoB</div>
-    </a>
-    <a class="character" href="https://youtube.com/channel/UChk_jrZBh6L8FhHhaRUB6KA?si=xyykAkBT0aBOe4ws" target="_blank">
-      <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377804711721435238/foto_de_perfil_yZecaYT_sujhuthumbmaker.png" alt="Yzecayt">
-      <div class="character-name">Yzecayt</div>
-    </a>
-  </div>
-
-  <section>
+    <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977739977560206/Logotipo_para_jogador_lobo_moderno_azul_20250529_162150_0000.png" alt="Logo Aurora Creft">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#personagens">Personagens</a>
+      <a href="#suporte">Suporte</a>
+      <a href="https://youtube.com/@aurora_creft" target="_blank">Canal Oficial</a>
+      <a href="https://discord.gg/uZ8Jft6B" target="_blank">Discord</a>
+    </nav>
+  </header>  <section class="section" id="sobre">
     <h2>Sobre a Série</h2>
-    <p>
-      Aurora Creft é uma série original criada por jogadores apaixonados por aventura, criatividade e diversão.
-      Aqui, cada personagem vive histórias únicas em um mundo cheio de mistério, desafios e amizade.
-      Assista aos episódios no canal oficial ou conheça os canais dos participantes!
-    </p>
-  </section>
-
-  <section id="suporte">
-    <h2>Suporte</h2>
-    <p>Precisa de ajuda? Envie uma mensagem abaixo e entraremos em contato!</p>
-    <form action="mailto:seuemail@dominio.com" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="text" name="nick" placeholder="Seu nick" required>
-      <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
-      <input type="submit" value="Enviar Mensagem">
+    <p>Aurora Creft é uma série Minecraft com personagens únicos, histórias envolventes e uma comunidade ativa! Acompanhe a jornada de Sam, NeoB e YzecaYT enfrentando desafios e aventuras incríveis no universo Aurora.</p>
+  </section>  <section class="section" id="personagens">
+    <h2>Personagens</h2>
+    <div class="personagens">
+      <div class="card">
+        <a href="https://www.youtube.com/@sam-f4h1m" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977387525869638/1747779845539-1.jpg" alt="Sam">
+          <h3>Sam</h3>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://www.youtube.com/@NeoBYT2" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977401601949787/iconNeoB-1-1.png" alt="NeoB">
+          <h3>NeoB</h3>
+        </a>
+      </div>
+      <div class="card">
+        <a href="https://youtube.com/@yzecaYT" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1377766276142727208/1377977415283904603/foto_de_perfil_yZecaYT_sujhuthumbmaker-1.png" alt="YzecaYT">
+          <h3>YzecaYT</h3>
+        </a>
+      </div>
+    </div>
+  </section>  <section class="section" id="suporte">
+    <h2>Suporte Online</h2>
+    <form class="formulario">
+      <input type="email" placeholder="Seu e-mail" required>
+      <input type="text" placeholder="Seu nick" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
-  </section>
-
-  <footer>
-    &copy; 2025 Aurora Creft — Todos os direitos reservados.
+  </section>  <footer>
+    &copy; 2025 Aurora Creft. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
