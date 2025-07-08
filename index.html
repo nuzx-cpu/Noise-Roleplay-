@@ -1,128 +1,168 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurora Creft</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <title>Regras - Cidade Santa</title>
   <style>
-    body {
+    :root {
+      --amarelo-escuro: #ffc400;
+      --amarelo-claro: #fff3b0;
+      --amarelo-pastel: #fff8d6;
+      --cinza: #333;
+      --branco: #fff;
+    }
+    * {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: #2a003f;
-      color: white;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--amarelo-pastel);
+      color: var(--cinza);
+      line-height: 1.7;
     }
     header {
-      background-color: #3b0072;
-      padding: 1rem;
+      background-color: var(--amarelo-escuro);
+      color: var(--branco);
       text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
-    header img {
-      max-height: 100px;
+    header h1 {
+      font-size: 3em;
     }
-    h1 {
-      margin: 0.5rem 0;
-    }
-    .container {
-      padding: 2rem;
-    }
-    .personagens {
+    nav {
+      background-color: var(--amarelo-claro);
       display: flex;
-      gap: 2rem;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .card {
-      background-color: #48007a;
-      border-radius: 10px;
-      padding: 1rem;
-      width: 200px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .card a {
+    nav a {
+      color: var(--cinza);
       text-decoration: none;
-      color: white;
+      margin: 0 18px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
     }
-    .formulario {
-      background-color: #3b0072;
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 500px;
+    nav a:hover {
+      background-color: var(--amarelo-escuro);
+      color: var(--branco);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
       margin: auto;
     }
-    .formulario input, .formulario textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: none;
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: var(--cinza);
+      border-bottom: 4px solid var(--amarelo-escuro);
+      display: inline-block;
+      padding-bottom: 8px;
     }
-    .formulario button {
-      background-color: #7200c7;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .card {
+      background-color: var(--branco);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+      margin-bottom: 40px;
+    }
+    ol {
+      margin-left: 25px;
+      margin-top: 12px;
+    }
+    ol li {
+      margin-bottom: 12px;
     }
     footer {
+      background-color: var(--amarelo-escuro);
+      color: var(--branco);
       text-align: center;
-      padding: 1rem;
-      background-color: #3b0072;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: #a678ff;
-      text-decoration: none;
+      padding: 20px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="img/logo.png" alt="Logo Aurora Creft">
-    <h1>Aurora Creft</h1>
-    <p>Série oficial - YouTube & Comunidade</p>
-  </header>  <div class="container">
-    <section class="personagens">
-      <div class="card">
-        <a href="https://youtube.com/@sam-f4h1m" target="_blank">
-          <img src="img/sam.jpg" alt="Sam">
-          <h3>Sam</h3>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://youtube.com/@NeoBYT2" target="_blank">
-          <img src="img/neob.png" alt="NeoB">
-          <h3>NeoB</h3>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://youtube.com/@aurora_creft" target="_blank">
-          <img src="img/yzecayt.png" alt="yZecaYT">
-          <h3>yZecaYT</h3>
-        </a>
-      </div>
-    </section><section class="formulario">
-  <h2>Suporte / Contato</h2>
-  <form>
-    <input type="text" placeholder="Seu Nick" required>
-    <input type="email" placeholder="Seu E-mail" required>
-    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+
+<header>
+  <h1>📜 Regras Cidade Santa</h1>
+</header>
+
+<nav>
+  <a href="#discord">Discord</a>
+  <a href="#ferias">Férias</a>
+  <a href="#acao">Ações</a>
+  <a href="#safe">Safezone</a>
+</nav>
+
+<section id="discord">
+  <h2>Regras do Discord</h2>
+  <div class="card">
+    <ol>
+      <li>Respeitar todos os membros e equipe administrativa.</li>
+      <li>Proibido spam, flood e divulgação de outros servidores sem permissão.</li>
+      <li>Evite discussões políticas e religiosas.</li>
+      <li>Proibido conteúdo ofensivo, discriminatório ou +18 fora das áreas permitidas.</li>
+      <li>Obedeça às ordens dos administradores e moderadores.</li>
+      <li>Uso indevido de mentions em massa será punido.</li>
+      <li>Evite fazer piadas ou provocações que possam ofender alguém.</li>
+    </ol>
+  </div>
 </section>
 
-  </div>  <footer>
-    <p>Canal oficial: <a href="https://youtube.com/@aurora_creft" target="_blank">Aurora Creft</a> | Discord: <a href="https://discord.gg/uZ8Jft6B" target="_blank">Entrar</a></p>
-  </footer>
+<section id="ferias">
+  <h2>Regras de Férias</h2>
+  <div class="card">
+    <ol>
+      <li>Para entrar de férias, avise a administração com antecedência.</li>
+      <li>Máximo de 15 dias de férias consecutivos por jogador.</li>
+      <li>Durante as férias, cargos VIP e lideranças podem ser temporariamente repassados.</li>
+      <li>O jogador deve retornar na data combinada ou poderá perder cargos ou benefícios.</li>
+      <li>VIP não é pausado durante as férias.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="acao">
+  <h2>Regras de Ações</h2>
+  <div class="card">
+    <ol>
+      <li>Todas as ações devem ter motivo válido e respeitar o Roleplay.</li>
+      <li>DM (Deathmatch) ou DB (Drive-by) sem motivo serão punidos.</li>
+      <li>Sequestros devem ser autorizados e registrados no Discord.</li>
+      <li>Não iniciar tiroteios em áreas públicas movimentadas sem justificativa no RP.</li>
+      <li>Ações contra bases e organizações precisam de autorização da staff.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="safe">
+  <h2>Regras de Safezone</h2>
+  <div class="card">
+    <ol>
+      <li>Proibido iniciar confrontos ou conflitos armados em áreas safe.</li>
+      <li>Sem sequestros ou mortes dentro de Safezones.</li>
+      <li>Áreas safe incluem HQs, hospitais, delegacias e praças públicas.</li>
+      <li>Respeite o uso da safezone para roleplay passivo e interações sociais.</li>
+      <li>Atos de provocação excessiva em safe podem ser punidos.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Cidade Santa — Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
